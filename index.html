@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reprograma - Reprogramando o mundo</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+
+	<!-- MENU HORIZONTAL -->
+	<header id="cabecalho">
+		<div class="container linha espacoEntre alinharVertical">
+			
+			<button class="botao menuHamburguer">
+				<i class="fa fa-bars"></i>
+			</button>
+
+			<nav class="menuHorizontal" id="navegacaoPrimaria">
+				<ul class="linha">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">CONTATO</a></li>
+					<li><a href="#">QUEM SOMOS</a></li>
+				</ul>
+			</nav>
+
+			<nav class="menuHorizontal" id="navegacaoMidiasSociais">
+				<ul class="linha">
+					<li>
+						<a href="#facebook">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#twitter">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#instagram">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+	<!-- FIM MENU HORIZONTAL -->
+
+	<!-- SLIDER -->
+	<section id="slider">
+		<!-- SLIDER NAVEGAÇÃO -->
+		<div class="navegacoes">
+			<nav class="setas">
+				<button class="seta esquerda"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+				<button class="seta direita"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+			</nav>
+				
+			<nav class="bullets menuHorizontal">
+				<ul class="linha">
+				</ul>
+			</nav>
+		</div>
+
+		<!-- SLIDER SLIDEBOX -->
+		<div class="slideBox">
+			<div class="slide centralizador ativo">
+				<img src="imgs/slide1.jpg">
+				<h3>Título</h3>
+				<a class="botao" href="#">Ver detalhes</a>
+			</div>
+			<div class="slide centralizador">
+				<img src="imgs/slide1.jpg">
+				<h3>Título2</h3>
+				<a class="botao" href="#">Ver detalhes</a>
+			</div>
+			<div class="slide centralizador">
+				<img src="imgs/slide1.jpg">
+				<h3>Título3</h3>
+				<a class="botao" href="#">Ver detalhes</a>
+			</div>
+			<div class="slide centralizador">
+				<img src="imgs/slide1.jpg">
+				<h3>Título4</h3>
+				<a class="botao" href="#">Ver detalhes</a>
+			</div>
+		</div>
+		
+	</section>
+	<!-- FIM SLIDER -->
+
+	<!-- VALORES -->
+	<main id="valores">
+		<div class="container">
+			
+			<!-- CARDS -->
+			<div class="cardContainer linha">
+
+				<div class="card">
+					<img src="imgs/foco.svg">
+					<div class="textos">
+						<h3>FOCO</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</p>
+					</div>
+					<div class="botoes linha">
+						<button class="botao detalhe">Detalhe</button>
+						<button class="botao amei">
+							<span>Amei</span>
+							<i class="fa fa-heart"></i>
+						</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img src="imgs/forca.svg">
+					<div class="textos">
+						<h3>FORÇA</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</p>
+					</div>
+					<div class="botoes linha">
+						<button class="botao detalhe">Detalhe</button>
+						<button class="botao amei">
+							<span>Amei</span>
+							<i class="fa fa-heart"></i>
+						</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img src="imgs/fe.svg">
+					<div class="textos">
+						<h3>FÉ</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</p>
+					</div>
+					<div class="botoes linha">
+						<button class="botao detalhe">Detalhe</button>
+						<button class="botao amei">
+							<span>Amei</span>
+							<i class="fa fa-heart"></i>
+						</button>
+					</div>
+				</div>
+				
+			</div>
+
+
+		</div>
+	</main>
+	<!-- FIM VALORES -->
+	<!-- CONTATO -->
+	<section class="contato container centralizador linha">	
+	  <form class="formulario" action="">
+	  	<h2>Sugestões</h2>
+	    <div class="form-group">
+	      <label for="nome">Nome</label>
+	      <input class="nome" type="text" name="nome" placeholder="Nome completo">
+	    </div>
+
+	    <div class="form-group">
+	      <label for="idade">Idade</label>
+	      <input class="idade" type="number" name="idade">
+	    </div>
+
+	    <div class="form-group sugestao">
+	      <label for="Sugestao">Sugestão</label>
+	      <textarea class="inputSugestao" 
+	      			name="sugestao"
+	                cols="40"
+	                rows="4"
+	                placeholder="Conta pra gente a sua sugestão :)"></textarea>
+	    </div>
+	    
+	    <button class="enviar" type="submit" name="button">Enviar</button>
+	  </form>
+	  <div class="baloes">
+	  	<div class="balao">
+	  		<header>
+	  		<h3>
+	  			Nome
+	  		</h3>
+	  		<span></span>
+	  			Idade
+	  		</span>
+	  		</header>
+	  		<p>
+	  			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	  			tempor incididunt ut labore et dolore magna aliqua.
+	  		</p>
+	  	</div>
+	  	
+	  </div>
+	  </section>
+
+	<!-- FIM CONTATO -->
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

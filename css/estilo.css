@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*ESTILOS PADRÕES*/
+body{
+	margin: 0;
+	font-family: "Open Sans";
+}
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+.linha{
+	display: flex;
+}
+	.linha.espacoEntre{
+		justify-content: space-between;
+	}
+	.linha.alinharVertical{
+		align-items: center;
+	}
+/*:first-child é o primeiro filho*/
+h1:first-child{
+	margin-top: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+*{
+	color: #292929;
+	box-sizing: border-box;
+}
+.centralizador{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.botao{
+	font-size: 15px;
+    font-weight: bold;
+    padding: 7px 13px;
+    background: white;
+    border: solid 1px #CCC;
+    border-radius: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+.botao .fa{
+	margin-left: 5px;
+}
+.botao .fa:only-child{
+	margin-left: 0px;
+}
+	.botao.amei{
+		background: #672f82;
+	}
+
+	.botao.amei span,
+	.botao.amei .fa{
+		color: rgba(255, 255, 255, 0.92);
+	}
+
+
+body section,
+body main{
+	padding-top: 20px;
+}
+/*FIM ESTILOS PADRÕES*/
+
+
+/*CABEÇALHO*/
+#cabecalho{
+	width: 100%;
+	background-color: #672f82;
+	/*Torna a tag fixa*/
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+}
+
+#cabecalho a{
+	color: white;
+}
+
+#cabecalho .container{
+	height: 40px;
+}
+
+#cabecalho .fa{
+	color: white;
+}
+
+.menuHorizontal ul{
+	margin: 0;
+	padding: 0;
+}
+.menuHorizontal a{
+	padding: 0 10px;
+}
+.botao.menuHamburguer{
+	background: none;
+	display: none;
+}
+/*FIM CABEÇALHO*/
+
+
+/*BANNER*/
+#slider {
+	height: calc(100vh - 40px);
+	width: 100%;
+	padding-top: 0;
+	position: relative;
+}
+#slider .seta {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 44px;
+	background: none;
+	border: none;
+	z-index: 9999;
+}
+#slider .seta.esquerda {
+	left: 0;
+}
+#slider .seta.direita {
+	right: 0;
+}
+#slider .bullets {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 9999;
+}
+
+.setas .fa {
+	color: white;
+}
+
+.slideBox {
+	height: 100%;
+}
+
+.slide {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 1s ease;
+	opacity: 0;
+}
+
+.slide img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.slide h3 {
+	color: white;
+}
+
+.slide.ativo {
+	opacity: 1;
+}
+
+.bullet {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: none;
+	background: #e6e6e6;
+	margin: 0 5px;
+
+}
+
+/*FIM BANNER*/
+
+
+/*VALORES*/
+#valores{
+	border-bottom: 1px solid rgba(103, 47, 130, 0.5);
+}
+.card{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.card .textos{
+	text-align: center;
+}
+.card img{
+	height: 100px;
+}
+.botao.amei.vermelho {
+	background-color: red;
+}
+/*FIM VALORES*/
+
+/*CONTATO*/
+
+.contato{
+	width: 100%;
+	padding: 0;
+	background-color: #672f82;
+	display: flex;
+	flex-direction: row;
+}
+form{
+	width: 320px;
+	background-color: white;
+	padding: 10px;
+}
+.form-group{
+	width: 100%;
+	background-color: white;
+}
+
+.form-group label{
+	display: block;
+}
+
+/*.form-group input{
+	width: 100%;
+}*/
+
+.enviar{
+	width: 90px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 7px 13px;
+    background: white;
+    border: solid 1px #CCC;
+    border-radius: 16px;
+    cursor: pointer;
+    transform: translateX(100%);
+    color: #672f82;
+}
+
+.enviar:hover{
+	background-color: #672f82;
+	color: white;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #ddd;
+}
+.nome.invalido{
+	border: 2px solid red;
+}
+.form-group.invalido label{
+	color: red;
+}
+
+.form-group.invalido input{
+	border: 2px solid red;
+}
+.contato label{
+	color: #672f82;
+	width: 50%;
+}
+
+.contato h2{
+	color: #672f82;
+}
+.balao{
+	margin: 10px 0;
+	padding: 10px;
+	background-color:white; 
+	border-radius: 10px;
+	color: #672f82;
+}
+
+.balao h3{
+	margin: 0;
+}
+/*
+.box-mensagem{
+	display: none;
+	
+}
+
+.box-mensagem.ativo{
+	display: block;
+	width: 320px;
+	background-color: white;
+	color:#672f82;
+	height: 100%;
+}
+
+.box-mensagem.ativo .mensagem{
+	width: 50%;
+}
+*/
+
+/*FIM CONTATO*/
+
+
+
+/*TABLET*/
+@media (max-width: 1140px){
+
+	.container{
+		width: 700px;
+	}
+
+	#cabecalho .container{
+		position: relative;
+	}
+
+	#navegacaoPrimaria{
+		display: none;
+		position: absolute;
+		top: 40px;
+		left: 0;
+		width: 100%
+	}
+
+	#navegacaoPrimaria.visivel {
+		display: block;
+	}
+
+	#navegacaoPrimaria ul {
+		flex-direction: column;
+		padding: 0;
+    	margin: 0;
+	}
+
+	#navegacaoPrimaria a {
+		display: block;
+		padding: 20px 0;
+		padding-left: 20px;
+		background: #672f82;
+		color: white;
+	}
+
+	.botao.menuHamburguer{
+		display: block;
+	}
+
+	.cardContainer{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.card{
+		width: 50%;
+	}
+
+	.contato{
+		width: 100%;
+	}
+
+}
+/*FIM TABLET*/
+
+
+
+
+/*SMARTPHONE*/
+@media (max-width: 700px){
+
+	.container{
+		width: 100%;
+	}
+
+	#slogan h1{
+		width: 300px;
+		background-size: contain;
+		margin: auto;
+	}
+
+	.cardContainer .card{
+		width: 100%;
+	}
+}
+/*FIM SMARTPHONE*/
